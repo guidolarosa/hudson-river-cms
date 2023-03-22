@@ -1,0 +1,49 @@
+{
+  "kind": "collectionType",
+  "collectionName": "real_estate_acquisitions",
+  "info": {
+    "singularName": "real-estate-acquisition",
+    "pluralName": "real-estate-acquisitions",
+    "displayName": "Real Estate Acquisition",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string",
+      "required": true
+    },
+    "City": {
+      "type": "string"
+    },
+    "MainImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "SliderImages": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "Description": {
+      "type": "richtext"
+    },
+    "Slug": {
+      "type": "uid",
+      "targetField": "Name"
+    }
+  }
+}
