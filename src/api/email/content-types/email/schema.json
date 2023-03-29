@@ -11,5 +11,11 @@
     "draftAndPublish": false,
     "comment": ""
   },
-  "attributes": {}
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string",
+      "required": true
+    }
+  }
 }
