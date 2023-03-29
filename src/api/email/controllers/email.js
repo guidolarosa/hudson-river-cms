@@ -24,7 +24,9 @@ module.exports = createCoreController('api::email.email', ({ strapi }) =>  ({
       }
     );
 
-    return { };
+    return { 
+      message: 'Email Test Passed'
+    };
 
   }
 }));
