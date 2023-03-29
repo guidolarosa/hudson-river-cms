@@ -9,7 +9,7 @@ const emailTemplate = {
 };
 
 module.exports = createCoreController('api::email.email', ({ strapi }) =>  ({
-   async sendContactMail(ctx) {
+   async sendContactEmail(ctx) {
      await strapi.plugins['email'].services.email.sendTemplatedEmail(
        {
          to: 'guido.glarosa@gmail.com',
