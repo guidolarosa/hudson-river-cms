@@ -24,7 +24,7 @@ module.exports = createCoreController('api::email.email', ({ strapi }) =>  ({
       }
     );
 
-    return { user };
+    return { };
 
   }
 }));
